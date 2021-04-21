@@ -3,7 +3,7 @@ provider "kubernetes" {
 }
 
 module "ssh" {
-  source           = "../.."
+  source           = "git::https://github.com/1733116199/tf-k8s.git"
   name             = "ssh"
   namespace        = "ssh"
   replicas         = 1
